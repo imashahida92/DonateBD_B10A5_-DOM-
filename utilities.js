@@ -10,3 +10,18 @@ function showSectionById(id){
     //show the section with the provided id
     document.getElementById(id).classList.remove('hidden');
 }
+
+
+//input field
+function getInputFieldValueById(id){
+    const inputValue = document.getElementById(id).value ;
+    return parseFloat(inputValue);
+ }
+ 
+
+ // text field 
+function getTextField (id){
+    const textValue = document.getElementById(id).innerText;
+    return parseFloat(textValue);
+
+}

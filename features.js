@@ -3,6 +3,7 @@ document.getElementById('donation-btn').addEventListener('click', function(){
     showSectionById('donation-form')
     this.style.backgroundColor='limegreen'
     document.getElementById('history-btn').style.backgroundColor='white'
+    // document.getElementById('footer-section').classList.remove('hidden')
 })
 
 
@@ -13,6 +14,6 @@ document.getElementById('history-btn').addEventListener('click', function(){
     // color on button if clicked
     this.style.backgroundColor='limegreen'
     document.getElementById('donation-btn').style.backgroundColor='white'
-    // 
-    document.getElementById('footer-section').classList.add('hidden')
+    // hide footer
+    // document.getElementById('footer-section').classList.add('hidden')
 })

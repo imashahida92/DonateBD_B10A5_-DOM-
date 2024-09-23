@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,19 +35,22 @@
         .font-inter{
             font-family: "Inter", system-ui;
         }
-        .mx-width{
+        /* .mx-width{
             max-width: 1440px;
             margin: auto;
+        } */
+        .active {
+            background-color: limegreen; 
         }
     </style>
 
 </head>
 <body class="font-inter ">
-     <header class="bg-[#F9F7F3] pb-3">
-        <nav class=" container mx-auto py-5">
+     <header class=" ">
+        <nav class=" container mx-auto bg-[#F9F7F3] pb-3  py-5">
             <div class="navbar flex flex-col md:flex-row mx-auto space-y-4 md:space-y-0">
                 <div class="navbar-start">
-                    <button class="btn btn-active bg-[#B4F461] hover:bg-[#b2ff4e] px-7 py-2 font-bold w-full md:w-fit">Blog</button>
+                    <button onclick="my_modal_5.showModal()" class="btn btn-active bg-[#B4F461] hover:bg-[#b2ff4e] px-7 py-2 font-bold w-full md:w-fit">Blog</button>
                 </div>
                 <div class="navbar-center">
                     <img src="assets/logo.png" alt="">
@@ -59,15 +63,17 @@
                 </div>
               </div>
         </nav>
+        <section class="click-button container mx-auto mt-16">
+            <div class="flex justify-center space-x-4">
+                 <button id="donation-btn" class="btn bg-white border-2 border-[#7a7979ee] hover:bg-[#b2ff4e] px-7 py-2 ">Donation</button>
+                 <button id="history-btn" class="btn bg-white border-2 border-[#7a7979ee] hover:bg-[#b2ff4e] px-7 py-2 ">History</button>
+            </div> 
+         </section>
      </header>
      <main>
-        <section class="click-button container mx-auto mt-16">
-           <div class="flex justify-center space-x-4">
-                <button class="btn bg-white border-2 border-[#7a7979ee] hover:bg-[#b2ff4e] px-7 py-2 ">Donation</button>
-                <button class="btn bg-white border-2 border-[#7a7979ee] hover:bg-[#b2ff4e] px-7 py-2 ">History</button>
-           </div> 
-        </section>
-        <section class="donation container mx-auto mt-10">
+
+        <!-- donation section -->
+        <section id="donation-form" class="donation container mx-auto mt-10 ">
             <div class="grid grid-cols-1 gap-8">
                 <!-- box-1 noakhali -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 border-2 p-8 rounded-xl space-x-3 justify-center items-center">
@@ -116,11 +122,34 @@
                 </div>
             </div>
         </section>
+
+        <!-- history section -->
+         <section id="history-display" class="hidden">
+           
+         </section>
      </main>
-     <footer class="mt-12">
+     <footer id="footer-section" class="mt-12">
         <div class="container mx-auto border-1 bg-[#e0dedb] h-24 w-full">
 
         </div>
      </footer>
+
+     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+
+     <!-- js added -->
+      <script src="features.js"></script>
+      <script src="utilities.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ document.getElementById('quata-injured-donate').addEventListener('click',functio
     if(amount > balance){
         alert('you do not have sufficient balance to transfer');
         return;
-    }else if(isNaN(amount) || amount < 0){
+    }else if(isNaN(amount) || amount <= 0){
         alert('failed to donate money for the injured in Quota Movement');
         return;
     }else{

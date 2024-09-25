@@ -9,7 +9,7 @@ document.getElementById('donate-feni').addEventListener('click',function(event){
     if(amount > balance){
         alert('you do not have sufficient balance to transfer');
         return;
-    }else if(isNaN(amount) || amount < 0){
+    }else if(isNaN(amount) || amount <= 0){
         alert('failed to donate money for feni flood relif');
         return;
     }else{

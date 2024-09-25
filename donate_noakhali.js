@@ -32,7 +32,7 @@ document.getElementById('donate-noakhali').addEventListener('click',function(eve
         historyItem.className = 'bg-white p-8 border-2 rounded-xl  container mx-auto shadow-xl'
 
         historyItem.innerHTML = `
-              <p class='text-xl font-bold '> <span class='text-2xl  text-red-800'>${amount}</span> Taka is Donated for famine-2024 at Noakhali, Bangladesh </p>
+              <p class='text-xl font-bold '> <span class='text-2xl  text-red-800'>${amount}</span> Taka is Donated for <span class='font-bold text-xl text-red-800'>famine-2024 at Noakhali, Bangladesh </span></p>
               <p class='font-semibold  py-2'>Your new Balance is <span class='font-bold text-lg text-red-800'> ${newBalance}</span> Taka</p>
               <p class='text-sm opacity-80'> Date : ${new Date().toLocaleString('en-GB', { timeZoneName: 'long' })}</p>
         `;

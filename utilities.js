@@ -25,3 +25,4 @@ function getTextField (id){
     return parseFloat(textValue);
 
 }
+

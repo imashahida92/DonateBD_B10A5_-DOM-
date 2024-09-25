@@ -17,3 +17,4 @@ document.getElementById('history-btn').addEventListener('click', function(){
     // hide footer
     // document.getElementById('footer-section').classList.add('hidden')
 })
+
